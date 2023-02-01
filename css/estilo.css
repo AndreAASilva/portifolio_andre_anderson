@@ -1,5 +1,5 @@
 body{
-    background-color: aquamarine;
+    background-color: #aaecc4;
 }
 
 /*---------------*\
@@ -65,7 +65,6 @@ body{
     top:8%;
     height: 170px;
     transform: skew(-5deg, -5deg);/*Inclinação do logo*/
-    
 }
 
 .logoHtml:hover{
@@ -93,7 +92,7 @@ body{
     display: inline-block;
     height: 30%;
     width:46%;
-    border: 1px solid black;
+    
 
     /*ALinhando os elementos pela linha de cima*/
     vertical-align: top;
@@ -117,7 +116,6 @@ body{
 .nome-descricao{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    
 }
 
 /*----------------*\
@@ -131,8 +129,6 @@ body{
     top:0;
     width: 100%;
     height: 60px;
-    
-    border: 1px solid black;
 }
 
 .titulo-bloco{
@@ -148,8 +144,6 @@ body{
     top: 30px;
     height: 450px;
     width:100%;
-
-    border:1px solid black;
 }
 
 .projetos-individuais01 li{
@@ -160,7 +154,7 @@ body{
     width:22%;
     height:30px;
     cursor:pointer;
-    background-color: yellow;
+    background-color: rgb(58, 134, 90);
     border-radius: 10px;
     margin: 10px;
     box-sizing: border-box;
@@ -174,7 +168,7 @@ body{
     width:22%;
     height:30px;
     cursor:pointer;
-    background-color: yellow;
+    background-color: rgb(58, 134, 90);
     border-radius: 10px;
     margin: 10px;
     box-sizing: border-box;
@@ -188,7 +182,7 @@ body{
     width:22%;
     height:30px;
     cursor:pointer;
-    background-color: yellow;
+    background-color: rgb(58, 134, 90);
     border-radius: 10px;
     margin: 10px;
     box-sizing: border-box;
@@ -201,8 +195,7 @@ body{
     margin-top: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
-    
+    color:white;
 }
 
 .projetos-individuais02 p{
@@ -211,7 +204,7 @@ body{
     margin-top: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
+    color:white;
 }
 
 .projetos-individuais03 p{
@@ -220,24 +213,28 @@ body{
     margin-top: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color:white;
+}
+
+.projetos-individuais01:active{
+    color:rgb(25, 63, 25);
+}
+
+.btn-projetos li:hover{
     
+    background-color: rgb(45, 197, 108);
+    transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.btn-projetos li:active{
+    
+    background-color: rgb(127, 204, 148);
+    transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
 }
 
 .btn-projetos li:hover{
     
     height: 32px;
-    background-color: rgb(59, 59, 255);
-    transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-
-.btn-projetos li:active{
-   
-    background-color: rgb(59, 255, 108);
-    transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-
-.btn-projetos li:hover{
-    
     font-size: 16.5px;
 }
 
@@ -280,39 +277,42 @@ footer{
 .logoFacebook{
     
     width: 4em;
+    margin-left:10px;
 }
 
 .logoLinkedin{
     
     width: 4em;
+    margin-left:10px;
 }
 
 .logoGitHub{
     
     width: 4em;
+    margin-left:10px;
 }
 
 .logos-redes-sociais .socialMedia{
     display: inline-block;
-    
-    margin-top:5%;
-    margin-left: 3%;
-    
+    justify-content: center;
+    align-items: center;
     
 }
 
 .logos-redes-sociais{
     position: relative;
     left: 35%;
+    top:30%;
     
-    top:25%;
     width: 30%;
     
-    margin: 0;
+    
+    
 }
 
 .logoFacebook:hover{
     cursor: pointer;
+    
 }
 
 .logoLinkedin:hover{
@@ -333,4 +333,63 @@ footer{
 
 .logoGitHub:active{
     width: 4.2em;
+}
+
+
+
+/*-----------------*\
+  CABECALHO-MOBILE
+\*-----------------*/
+
+@media(max-width:992px){
+    #caixa1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background-color: #c6efd6;
+        height: 100px;
+        width: 100%;
+    }
+
+    #caixa2{
+        position: absolute;
+        top:5%;
+        right: 10%;
+        background-color:none;
+        height: 80px;
+        width: 70%;
+    }
+    
+    .fotoPerfil{
+        position: absolute;
+        bottom:0%;
+        left: 0%;
+        height: 100%;
+        
+    }  
+    
+    .logoCss{
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        height: 80%;
+        
+       
+    }
+    
+    .logoHtml{
+        position: absolute;
+        top: 15%;
+        left: 49%;
+        height: 80%;
+        transform: rotate(10deg);
+    }
+    
+    .logoJs{
+        position: absolute;
+        top: 15%;
+        left: 72%;
+        height: 80%;
+        transform: rotate(-10deg);
+    }
 }
