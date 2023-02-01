@@ -305,9 +305,6 @@ footer{
     top:30%;
     
     width: 30%;
-    
-    
-    
 }
 
 .logoFacebook:hover{
@@ -349,6 +346,7 @@ footer{
         background-color: #c6efd6;
         height: 100px;
         width: 100%;
+        
     }
 
     #caixa2{
@@ -358,6 +356,7 @@ footer{
         background-color:none;
         height: 80px;
         width: 70%;
+        
     }
     
     .fotoPerfil{
@@ -392,4 +391,220 @@ footer{
         height: 80%;
         transform: rotate(-10deg);
     }
+
+    .bloco-apresentacao li{
+        height: 100%;
+        width: 100%;
+
+        margin-left: 0;
+        
+    }
+
+    .nome{
+        position:relative;
+        left:5%;
+        width: 90%;
+        font-size: 50px;
+        color:rgb(0, 24, 90);
+        text-align:center;
+        
+    }
+
+    .nome-descricao{
+        color:rgb(0, 24, 90);
+        text-align:center;
+
+        font-size: 26px;
+        
+    }
+
+    .titulo-bloco{
+        color:rgb(0, 24, 90);
+    }
+
+    .bloco-links-projetos {
+        position: relative;
+        top: 0;
+        left: 2%;
+        
+        width: 95%;
+        height: 780px;
+
+        margin: 0;
+        padding: 0;
+
+        border:1px solid black;
+    }
+
+    .projetos-individuais01 li{
+        position:relative;
+        top:20px;
+        left: 5%;
+        
+        width:80%;
+        height:40px;
+        cursor:pointer;
+        background-color: rgb(58, 134, 90);
+        border-radius: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        
+    }
+    
+    .projetos-individuais02 li{
+        position:relative;
+        top:20px;
+        left: 5%;
+        
+        width:80%;
+        height:40px;
+        cursor:pointer;
+        background-color: rgb(58, 134, 90);
+        border-radius: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+    
+    .projetos-individuais03 li{
+        position:relative;
+        top:20px;
+        left: 5%;
+        
+        width:80%;
+        height:40px;
+        cursor:pointer;
+        background-color: rgb(58, 134, 90);
+        border-radius: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .projetos-individuais01 p{
+    
+        text-align: center;
+        margin-top: 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        color:white;
+    }
+    
+    .projetos-individuais02 p{
+        
+        text-align: center;
+        margin-top: 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        color:white;
+    }
+    
+    .projetos-individuais03 p{
+        
+        text-align: center;
+        margin-top: 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        color:white;
+    }
+
+    .bloco-projetos{
+        position: relative;
+        top:0;
+
+        width: 100%;
+        height: 900px;
+
+        border:1px solid black;
+
+    }
+    
+}
+
+/*-----------------*\
+    FOOTER-MOBILE
+\*-----------------*/
+
+@media(max-width:992px){
+    
+    footer{
+        position: relative;
+        bottom: 0;
+    
+        height: 250px;
+        width: 100%;
+        
+        margin: 0;
+        padding: 0;
+        
+        
+        background-color: #c6efd6;
+
+        border:1px solid black;
+    }
+    
+    .logoFacebook{
+    
+        width: 80%;
+        
+    }
+    
+    .logoLinkedin{
+        
+        width: 80%;
+        
+    }
+    
+    .logoGitHub{
+        
+        width: 80%;
+        
+    }
+    
+
+    .caixa-principal-rodape{
+        position: relative;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        
+    }
+
+    .logos-redes-sociais{
+        display: flex;
+        justify-content: center;
+        left: 25%;
+        width: 50%;
+       
+        
+    }
+    /*
+    .socialMedia{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .socialMedia img{
+        display: inline-block;
+        width: 50%;
+    }
+
+    */
+    
+    /*
+    .logos-redes-sociais{
+        position: relative;
+        left: 35%;
+        top:15%;
+        
+        width: 30%;
+
+        border:1px solid black;
+    }
+    */
+    
 }
